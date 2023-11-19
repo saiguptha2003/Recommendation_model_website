@@ -1,0 +1,17 @@
+{% import 'utility.html' as utl %}
+
+{{utl.htmltop('Upload')}}
+{{utl.navbar('Upload')}}
+
+<div class="container">
+    <form method="POST" action="{{ url_for('upload') }}">
+        <div>
+            <label for="formFileLg" class="form-label">Large file input example</label>
+            <input class="form-control form-control-lg" id="formFileLg" name="file" type="file">
+          </div>
+        <button type="submit" class="btn">Submit</button>
+    </form>
+</div>
+
+
+{{ utl.htmlbottom() }}
